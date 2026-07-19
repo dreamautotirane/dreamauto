@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="sq">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakti | Dream Auto Tirane</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-bar">
+        <a class="brand" href="./index.html">Dream Auto Tirane</a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span class="sr-only">Shfaq/Fshih navigacionin</span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Navigimi kryesor">
+          <a href="./index.html">Kryefaqja</a>
+          <a href="./inventory.html">Inventari</a>
+          <a href="./about.html">Rreth nesh</a>
+          <a href="./contact.html" class="active">Kontakti</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container contact-layout">
+          <div>
+            <p class="eyebrow">Na kontaktoni</p>
+            <h1>Le të gjejmë automjetin tuaj të ardhshëm.</h1>
+            <p>
+              Ndani disa detaje dhe ekipi ynë do t'ju kontaktojë për të organizuar një shikim privat ose për t'ju përgjigjur pyetjeve.
+            </p>
+          </div>
+          <form id="contact-form" class="contact-form" novalidate>
+            <label for="name">Emri</label>
+            <input id="name" name="name" type="text" required />
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+
+            <label for="phone">Telefoni</label>
+            <input id="phone" name="phone" type="tel" required />
+
+            <label for="message">Mesazhi</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button class="button primary" type="submit">Dërgo Pyetjen</button>
+            <p id="form-status" class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>© 2026 Dream Auto Tirane</p>
+        <div class="footer-links">
+          <a href="https://www.instagram.com/dreamautotirane/" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="./contact.html">Na kontaktoni</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

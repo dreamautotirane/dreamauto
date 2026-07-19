@@ -12,6 +12,9 @@ Një faqe statike e lehtë për një shitës automjetesh, e projektuar për depl
 - js/main.js — toggle për navigacionin në telefon dhe validim bazë të formularit
 - images/ — dosje boshe për fotografi të ardhshme
 
+Note: një logo SVG është vendosur si `image.jpeg` për paraqitje të menjëhershme.
+Nëse preferoni versionin që dërguat (PNG/JPG), vendosni atë si `images/logo.png` dhe ndryshoni emrin ose zëvendësoni `images/logo.jpg`.
+
 ## Pamja lokale
 
 Hap çdo faqe direkt në browser, ose shërbeje folderin me një server statik të thjeshtë:

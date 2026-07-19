@@ -6,8 +6,8 @@
   --color-accent: #c62828;
   --color-accent-dark: #9b1c1c;
   --color-border: #dfe5ef;
-  --radius: 16px;
-  --shadow: 0 12px 32px rgba(22, 32, 51, 0.08);
+  --radius: 12px;
+  --shadow: 0 8px 20px rgba(22, 32, 51, 0.06);
 }
 
 * {
@@ -17,7 +17,8 @@
 body {
   margin: 0;
   font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
-  line-height: 1.6;
+  line-height: 1.5;
+  font-size: 15px;
   color: var(--color-text);
   background: var(--color-bg);
 }
@@ -99,7 +100,7 @@ img {
 }
 
 .hero {
-  padding: 4rem 0 3rem;
+  padding: 3rem 0 2.5rem;
   background: linear-gradient(135deg, #ffffff 0%, #eef3fb 100%);
 }
 
@@ -128,7 +129,7 @@ h3 {
 }
 
 .hero h1 {
-  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
   margin-bottom: 1rem;
 }
 
@@ -177,7 +178,7 @@ h3 {
 }
 
 .section {
-  padding: 3rem 0;
+  padding: 2.25rem 0;
 }
 
 .section.alt {
@@ -211,8 +212,28 @@ h3 {
   font-weight: 600;
 }
 
+/* Header / logo */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.logo {
+  height: 36px;
+  width: auto;
+  display: block;
+}
+
+.brand-text {
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
 .card-body {
-  padding: 1rem 1.1rem 1.25rem;
+  padding: 0.9rem 1rem 1rem;
 }
 
 .price {
@@ -295,6 +316,15 @@ h3 {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+}
+
+/* Slightly smaller headings for a cleaner desktop layout */
+h2 {
+  font-size: 1.15rem;
+}
+
+h3 {
+  font-size: 1rem;
 }
 
 .sr-only {

@@ -22,17 +22,17 @@ if (form && formStatus) {
     const message = String(data.get('message') || '').trim();
 
     if (!name || !email || !phone || !message) {
-      formStatus.textContent = 'Ju lutemi plotësoni të gjitha fushat përpara se të dërgoni.';
+      formStatus.textContent = 'Ju lutemi plotësoni të gjitha fushat përpara se të dërgoni pyetjen.';
       return;
     }
 
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailPattern.test(email)) {
-      formStatus.textContent = 'Ju lutemi vendosni një adresë të vlefshme email.';
+      formStatus.textContent = 'Ju lutemi shkruani një adresë email të vlefshme.';
       return;
     }
 
-    formStatus.textContent = 'Faleminderit! Pyetja juaj është regjistruar.';
+    formStatus.textContent = 'Faleminderit! Pyetja juaj është regjistruar me sukses.';
     form.reset();
   });
 }
